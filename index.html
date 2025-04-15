@@ -16,17 +16,29 @@
 		<script src="js/glide.min.js"></script>
 		<script src="js/site-scripts.js"></script>
 		<style>
-    body{
-        margin: 0; /* Remove default margin */
-    }
-    iframe{      
-        display: block;  /* iframes are inline by default */   
-        height: 73vh;  /* Set height to 73% of the viewport height */   
-        width: 60vw;  /* Set width to 75% of the viewport width */     
-        border: none; /* Remove default border */
-        background: lightyellow; /* Just for styling */
-    }
+    .container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 110%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
 </style>
+<script>
+const el = document.getElementById("el");
+console.log(el.allowFullscreen); // Output: true
+</script>
     </head>
 	
     <body>
@@ -77,15 +89,15 @@
 							
 							
 		
-<iframe src="https://tvkabut.blogspot.com/?id=https://www.dropbox.com/scl/fi/4yz8zz8bjzhow2xdagowj/tutorial-device.mp4?rlkey=4vj8qdbspwnwh0z0v9zk2rytd&st=wradsth6&dl=1"></iframe>											
+<iframe id="el" allowfullscreen class="responsive-iframe" src="https://tvkabut.blogspot.com/?id=https://www.dropbox.com/scl/fi/4yz8zz8bjzhow2xdagowj/tutorial-device.mp4?rlkey=4vj8qdbspwnwh0z0v9zk2rytd&st=wradsth6&dl=1"></iframe>											
 								
 <p>Cara koneksi wifi debug</p>
-<iframe src="https://tvkabut.blogspot.com/?id=https://www.dropbox.com/scl/fi/6hdky6th3j9wislthcgwd/scrcpy-koneksi-wireless.mp4?rlkey=yff6fawtee1lun82sshatosuv&st=16x4bvqe&dl=0"></iframe>	
+<iframe id="el" allowfullscreen class="responsive-iframe" src="https://tvkabut.blogspot.com/?id=https://www.dropbox.com/scl/fi/6hdky6th3j9wislthcgwd/scrcpy-koneksi-wireless.mp4?rlkey=yff6fawtee1lun82sshatosuv&st=16x4bvqe&dl=0"></iframe>	
 
 
 <p>karena scrcpy tidak dapat digunakan untuk multi device biasanya ada terjadi eror.</p>
 <p>untuk mengatasi eror pada scrcpy yang tidak bisa dibuka melalui usb debug. silahkan lihat video dibawah</p>
-<iframe src="https://tvkabut.blogspot.com/?id=https://www.dropbox.com/scl/fi/w3pf63ah5e9tqan6pkdn2/ScreenRecorderProject3.mkv?rlkey=3yuit7nd014y093x74ihnpy9r&st=hp24ts7c&dl=1"></iframe>
+<iframe id="el" allowfullscreen class="responsive-iframe" src="https://tvkabut.blogspot.com/?id=https://www.dropbox.com/scl/fi/w3pf63ah5e9tqan6pkdn2/ScreenRecorderProject3.mkv?rlkey=3yuit7nd014y093x74ihnpy9r&st=hp24ts7c&dl=1"></iframe>
 
 
 
