@@ -28,23 +28,17 @@ video {
 		<script src="js/glide.min.js"></script>
 		<script src="js/site-scripts.js"></script>
 		<style>
-    .container {
+    .video-container {
   position: relative;
-  overflow: hidden;
-  width: 100%;
-  height: 110%;
-  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+  padding-bottom: 56.25%;
 }
 
-/* Then style the iframe to fit in the container div with full height and width */
-.responsive-iframe {
+.video-container iframe {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
-  right: 0;
   width: 100%;
-  height: 400%;
+  height: 100%;
 }
 </style>
 <script>
@@ -157,6 +151,15 @@ console.log(el.allowFullscreen); // Output: true
       encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 </div>								
+
+
+<div class="video-container">
+  <iframe
+    src="https://www.youtube.com/embed/XJdFuIm79S8?si=WGSeHY4kK4AHsDht"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope;"
+    allowfullscreen></iframe>
+</div>
 								
 </ br>
 					<a class="uk-button uk-button-danger" href="https://drive.google.com/file/d/1rJJfTCAIjwkCBgBAej87eZtt45ouMPov/view?usp=drive_link">Google Drive</a></p>
